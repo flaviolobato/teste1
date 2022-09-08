@@ -1,0 +1,187 @@
+:root {
+    /* Cores */
+    --dark-blue: #16213E;
+    --blue: #0F3460;
+    --purple: #533483;
+    --pink: #E94560;
+    --white: #FFFFFF;
+    --black: #000000;
+    --crimson: #DC143C;
+    /*Fonte*/
+    --font-press-start: 'Press Start 2P', sans-serif;
+    --fonte-poppins: 'Poppins', sans-serif;
+    --thin: 300;
+    --regular: 400;
+    --medium: 500;
+    --semi-bold: 600;
+    --bold: 700;
+}
+body {
+    position: relative;
+    overflow: visible;
+}
+header {
+    position: sticky;
+    top: 0;
+}
+    /* NAVBAR STYLES */
+.navbar {
+  background-color: var(--dark-blue);
+  color: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+  box-sizing: border-box;
+  max-height: 75px;
+}
+.logo-wrap {
+    display: flex;
+    align-items: center;
+}
+.logo {
+    width: 100px;
+}
+.main-title{
+    color: var(--white);
+    font-size: 15px;
+    font-family: var(--font-press-start);
+}
+.hamburger {
+    position: relative;
+}
+.hamb-menu {
+    width: 25px;
+}
+.hamb-content {
+    display: none;
+    position: absolute;
+    padding: 20px;
+    background-color: var(--white);
+    border: 2px solid var(--pink);
+    right: 0;
+}
+.hamb-content a {
+    color: var(--black);
+    text-decoration: none;
+}
+.hamb-content a:hover {
+    text-decoration: underline;
+}
+.hamburger:hover .hamb-content {
+    display: block;
+}
+
+    /* TEXT BODY */
+.first-line{
+    display: block;
+    text-align: center;
+    font-size: 35px;
+    font-weight: var(--semi-bold);
+    color: var(--pink);
+}
+.main-text{
+    font-size: 20px;
+}
+    /* FORM */
+.main-form{
+    background-color: var(--purple);
+    height: 100vh;
+    color: var(--white);
+    text-align: center;
+    padding-top: 0;
+}
+.formulario{
+    background-color: var(--purple);
+    color: var(--white);
+}
+
+.form-title{
+    font-family: var(--font-press-start);
+    font-size: 15px;
+    text-align: center;
+}
+.almacortada{
+    color: var(--crimson);
+    text-decoration: line-through 2px;
+}
+.form-body {
+    font-family: var(--fonte-poppins);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1% 30% 0;
+    border: 5px double;
+    border-radius: 30px;
+    padding: 20px;
+    border-color: var(--pink);
+}
+.form-body:hover {
+    border-color: var(--blue);
+}
+label{
+    display: inline-block;
+    margin: 50px auto;
+}
+.nomehumano{
+    margin: auto;
+    display: block;
+    text-align: center;
+}
+.cpf{
+    margin: auto;
+    display: block;
+    text-align: center;
+}
+.nascimento{
+    margin: auto;
+    display: block;
+    text-align: center;
+}
+.div-termos{
+    margin: 20px auto;
+    display: block;
+    text-align: center;
+}
+.termos{
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+}
+.declaracao{
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+}
+.bongo{
+    display: block;
+    margin: auto;
+    width: 100px;
+}
+.submit{
+    display: block;
+    margin: 10px auto;
+}
+
+
+@media (min-width: 768px) {
+    .hamb-content {
+        display: inline-block;
+        position: relative;
+        background-color: transparent;
+        border: none;
+    }
+    .hamb-content li{
+        display: inline-block;
+        margin: 0 20px;
+    }
+    .hamb-content a{
+        color: var(--white);
+    }
+    .hamb-menu{
+        display: none;
+    }
+}
+
+
+
